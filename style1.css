@@ -1,0 +1,35 @@
+div {             
+    padding: 5px;             
+    border: 2px solid black;             
+    margin: 5px;   
+    display: flex;
+    flex-direction: row;       
+}
+
+@media (min-width: 400px) {
+
+    .flex-item-1, .flex-item-3 {
+        width: 33%;
+    }
+
+}
+
+@media (min-width: 500px) {
+     
+    [class|="flex-item"] {
+        width: 25%;
+    }
+
+}
+
+@media (min-width: 600px) {
+    
+    .flex-item-1, .flex-item-2 {
+        flex-basis: 15%;
+    }
+    
+    .flex-item-3, .flex-item-4 {
+        flex-grow: 1;
+    }
+  
+}

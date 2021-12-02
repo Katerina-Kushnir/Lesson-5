@@ -1,0 +1,57 @@
+div {
+    border: 1px solid black;
+    margin: 0;
+}
+
+/*для мобильных устройств*/
+@media (min-width: 320px) {   
+    
+    div {
+        width: auto; 
+    }
+    
+}
+
+/*для планшетов*/
+@media (min-width: 768px) {   
+    
+    div:nth-child(4) {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    div:nth-child(2), div:nth-child(3) {
+        width: 25%;
+    }
+
+    div:nth-child(2) {
+        float: left;
+    }
+
+    div:nth-child(3) {
+        float: right;
+    }
+   
+}
+
+/*для десктопов*/
+@media (min-width: 1140px) {   
+    
+    div:nth-child(4) {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    div:nth-child(2), div:nth-child(3) {
+        width: 20%;
+    }
+
+    div:nth-child(2) {
+        float: left;
+    }
+
+    div:nth-child(3) {
+        float: right;
+    }
+   
+}
